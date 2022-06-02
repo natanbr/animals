@@ -7,8 +7,9 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineTemplate": true,
-          "inlineStyle": true,
+          "inlineTemplate": false,
+          "inlineStyle": false,
+          "changeDetection": "OnPush",
           "style": "scss",
           "skipTests": true
         },
@@ -60,6 +61,20 @@
             "scripts": []
           },
           "configurations": {
+            "hmr": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
+            },
             "production": {
               "budgets": [
                 {
@@ -95,6 +110,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "animals:build:hmr"
+            },
             "production": {
               "browserTarget": "animals:build:production"
             },

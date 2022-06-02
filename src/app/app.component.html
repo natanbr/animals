@@ -1,0 +1,6 @@
+<button (click)="startVideo()"> Start Video </button>
+
+<app-youtube-player
+    *ngIf="video$ | async as video"
+    [videoId]="video">
+</app-youtube-player>
