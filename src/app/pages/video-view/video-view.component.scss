@@ -1,0 +1,30 @@
+@import '../../../scss/abstracts/mixins';
+
+.video-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    margin-top: 5vh;
+    width: 640px; // placeholder
+    height: 390px; // placeholder
+    place-self: center;
+}
+
+.back-btn {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 100%;
+
+    @include absCenter;
+}
+
+.button-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

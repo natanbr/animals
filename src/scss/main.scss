@@ -1,0 +1,20 @@
+/*
+Package.json comments::after
+&& runs tasks in serial; & in parallel.
+
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/untility";
+

@@ -1,6 +1,7 @@
 <youtube-player
-    [videoId]="videoId"
+    [videoId]="videoDetails.videoId"
     [playerVars]="playerVars"
     (stateChange)="onPlayerStateChange($event)"
-    >
+    (ready)="onReady($event)"
+    (apiChange)="onApiChange($event)">
 </youtube-player>

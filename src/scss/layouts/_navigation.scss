@@ -1,0 +1,239 @@
+.navigation {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border: 50%;
+        z-index: 2000;
+        border-radius: 100%;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        cursor: pointer;
+
+        text-align: center; // center the icon elements
+
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        } 
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        } 
+    }
+
+    &__background {
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        z-index: 1000;
+        border-radius: 100%;
+        height: 6rem;
+        width: 6rem;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        transition: transform .8s cubic-bezier(.86, 0, .07, 1);
+        // transform: scale(80)
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        } 
+
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.4rem;
+        } 
+    }
+
+    &__nav {
+        z-index: 1500;
+        height: 100vh;
+        // width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0; // original option
+        // right: 0; // optino 2
+        
+        // hide the text 
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(.86, -.55, .3, 1.5); // original option
+        // transition: opacity .8s; // option 2 - no movment to the left
+    }
+
+    &__list {
+        // should be a mixin
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        list-style: none;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    // original option
+    &__link { 
+        &:link,
+        &:visited {
+            display: inline-block; // link padding and animation won't work correctly without inline block
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 240%; // multiply the background size by 2
+            transition: all .4s;
+
+            :first-child {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%; // move the background 100% to left
+            color: $color-primary;
+            transform: translateX(1rem);
+        }
+
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    // Icon
+    &__icon {
+        position: relative;
+        margin-top: 3.4rem;
+
+        &, 
+        &::before, 
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+        }
+
+        &::before, 
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: transform .2s;
+        }
+
+        &::before {
+            top: -.8rem;
+        }
+
+        &::after {
+            top: .8rem;
+        }
+    }
+
+    &__button:hover &__icon::before {
+        // top: -1rem; <- doesn't work as good as transform
+        transform: translateY(-.2rem);
+    }
+
+    &__button:hover &__icon::after {
+        // top: 1rem; <- doesn't work as good as transform
+        transform: translateY(.2rem);
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        // opacity: 0;
+        background-color: transparent;
+
+        &::after {
+            top: 0;
+            transform: rotate(-135deg) translateY(0);
+        }
+
+        &::before {
+            top: 0;
+            transform: rotate(135deg) translateY(0);
+        }
+    }
+
+    // Option 2
+    // &__link { 
+    //     position: relative;
+    //     &:link,
+    //     &:visited {
+    //         display: inline-block; // link padding and animation won't work correctly without inline block
+    //         font-size: 3rem;
+    //         font-weight: 300;
+    //         padding: 1rem 2rem;
+    //         color: $color-white;
+    //         text-decoration: none;
+    //         text-transform: uppercase;
+
+    //         :first-child {
+    //             margin-right: 1.5rem;
+    //             display: inline-block;
+    //         }
+    //     }
+    //     &:hover,
+    //     &:active {
+    //         // background-position: 100%; // move the background 100% to left
+    //         // color: $color-primary;
+    //         // transform: translateX(1rem);
+    //     }
+
+    // }
+
+    // &__link { 
+    //     &:link::after,
+    //     &:visited::after {
+    //         content: "";
+    //         display: inline-block;
+    //         position: absolute;
+    //         left: 0;
+    //         bottom: 10px;
+    //         width: 105%;
+    //         height: .2rem;
+    //         background-image: linear-gradient(to right, $color-white 45% , transparent 100%);
+    //         transition: all .2s ease-out;
+    //         transform: translateX(-100%);
+    //         opacity: 0;
+
+    //         :first-child {
+    //             margin-right: 1.5rem;
+    //             display: inline-block;
+    //         }
+    //     }
+
+    //     &:hover::after,
+    //     &:active::after {
+    //         // background-position: 100%; // move the background 100% to left
+    //         color: $color-primary;
+    //         transform: translateX(0%);
+    //         opacity: 1;
+    //     }
+
+    // }
+}

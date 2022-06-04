@@ -1,0 +1,16 @@
+<div class="video-page">
+    <div class="video-container"
+        *ngIf="videoDetails$ | async as videoDetails">
+        <app-youtube-player
+            [videoDetails]="videoDetails">
+        </app-youtube-player>
+    </div>
+
+    <div class="button-container">
+        <button
+            class="back-btn"
+            (click)="back()">
+            Back
+        </button>
+    </div>
+</div>

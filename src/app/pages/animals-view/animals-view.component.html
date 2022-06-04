@@ -1,0 +1,15 @@
+<div class="button-container">
+    
+    <button *ngFor="let animalId of animalIds"
+        class="animal-button"
+        (click)="startVideo(animalId)">
+        <img class="animal-button__img" src="assets/animals/{{imageUrl(animalId)}}" >
+    </button>
+
+    <button
+        class="animal-button"
+        (click)="test()">   
+    </button>
+   
+</div>
+

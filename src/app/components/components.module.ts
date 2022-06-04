@@ -17,4 +17,4 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     YoutubePlayerComponent
   ]
 })
-export class YoutubePlayerModule { }
+export class ComponentsModule { }
