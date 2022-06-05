@@ -6,7 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "deploy:pages": "ng deploy --base-href=/angular-app/"
   },
   "private": true,
   "dependencies": {
