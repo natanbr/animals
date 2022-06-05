@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'video/:id', component: VideoViewComponent, data: {animation: 'Video'}},
   { path: 'credits', component: CreditsPageComponent, data: {animation: 'Credits'} },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent, },  // Wildcard route for a 404 page
+  // { path: '**', component: NotFoundComponent, },  // Wildcard route for a 404 page
 ];
 
 @NgModule({
