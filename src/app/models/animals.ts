@@ -33,13 +33,15 @@ export const animals = new Map<string, Array<VideoDetails>>([
         { videoId: 'CU0kyxIiIC0', startTime: 5, endTime: 13}
     ]],
     ['lion', [
-        { videoId: '', startTime: 0, endTime: 0}
+        { videoId: 'FmLC0htEXVE', startTime: inSec(78), endTime: inSec(1,15)}
     ]],
     ['penguin', [
-        { videoId: '', startTime: 0, endTime: 0}
+        { videoId: 'Ys6D8qrG59s', startTime: 20, endTime: 30},
+        { videoId: 'Ys6D8qrG59s', startTime: inSec(1,35), endTime: inSec(1,40)}
     ]],
     ['squirrel', [
-        { videoId: '', startTime: 0, endTime: 0}
+        { videoId: 'IMOQv1QHxSQ', startTime: 18, endTime: 25},
+        { videoId: 'IMOQv1QHxSQ', startTime: 26, endTime: 36}
     ]],
 ]);
 
