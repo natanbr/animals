@@ -1,24 +1,75 @@
+@import '../../../scss/abstracts/_mixins.scss';
+
 .button-container {
     display: grid;
-    max-width: 700px;
+    max-width: 1000px;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 3rem;
+    row-gap: 5vmin;
+    padding: 5vmin;
+
+    @media (orientation:landscape) { 
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include respond(tab-port) {
+        row-gap: 2vmin;
+        padding: 2vmin;
+    }
 }
 
 .animal-button {
-    // width: 128px;
-    // height: 128px;
+    z-index: 500;
+    width: fit-content;
+    height: fit-content;
+    padding: 2vmin;
+    justify-self: center;
     background-color: transparent;
     border: none;
+
+    @include respond(tab-port) {
+        row-gap: 2vmin;
+        padding: 2vmin;
+    }
 
     &:hover {
         transition: transform 0.4s;
         transform: scale(1.1);
     }
-
 }
 
-.cow {
-    background-image: '/src/assets/animals/cow.png';
+.decoration {
+    z-index: 400;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    &> * {
+        width: 15vw;
+        position: absolute;
+    }
+
+    .top-right {
+        top: 0;
+        right: 0;
+    }
+    
+    .bottom-left {
+        transform: scaleX(-1) rotate(90deg);
+        bottom: 0;
+        left: 0;
+    }
+
+    .bottom-right {
+        transform: rotate(90deg);
+        bottom: 0;
+        right: 0;
+    }
+    
+    .top-left {
+        transform: scaleX(-1);
+        top: 0;
+        left: 0;
+    }
 }
