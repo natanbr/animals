@@ -6,20 +6,18 @@
     margin: auto;
     grid-template-columns: repeat(3, 30vw);
     grid-template-rows: repeat(8, 20vh);
-    row-gap: 5vmin;
+    row-gap: 2vmin;
+    column-gap: 1vmin;
     padding: 5vmin;
 
-    @include respond(tab-port) {
-        row-gap: 2vmin;
-        padding: 2vmin;
-    }
-    
     @media (orientation:landscape) { 
         // full grid 
         // grid-template-columns: repeat(10, 9.5vw);
         // grid-template-rows: repeat(5, 14vh);
-        grid-template-columns: repeat(7, 13vw);
+        grid-template-columns: repeat(7, 12vw);
         grid-template-rows: repeat(4, 19vh);
+        row-gap: 4vmin;
+        column-gap: 1vmin;
     }
 }
 
