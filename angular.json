@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "animals"
+  "defaultProject": "animals",
+  "cli": {
+    "analytics": false
+  }
 }
