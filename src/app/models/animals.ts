@@ -70,7 +70,7 @@ export const animals = normalizeData(new Map<string, Array<VideoDetailsStr>>([
     [ 'Kangaroo' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '2:29', endTime: '2:49'}
     ]],
-    [ 'Grizzly Bear' , [
+    [ 'Grizzly-Bear' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '2:49', endTime: '3:09'}
     ]],
     [ 'Rhinoceros' , [
@@ -79,12 +79,12 @@ export const animals = normalizeData(new Map<string, Array<VideoDetailsStr>>([
     [ 'Koala' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '3:29', endTime: '3:49'}
     ]],
-    [ 'Sealion' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '3:49', endTime: '4:09'}
-    ]],
-    [ 'Meerkat' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '4:09', endTime: '4:29'}
-    ]],
+    // [ 'Sealion' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '3:49', endTime: '4:09'}
+    // ]],
+    // [ 'Meerkat' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '4:09', endTime: '4:29'}
+    // ]],
     [ 'Lion' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '4:29', endTime: '4:49'}
     ]],
@@ -94,9 +94,9 @@ export const animals = normalizeData(new Map<string, Array<VideoDetailsStr>>([
     [ 'Leopard' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '5:09', endTime: '5:29'}
     ]],
-    [ 'Polar Bear' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '5:29', endTime: '5:49'}
-    ]],
+    // [ 'Polar Bear' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '5:29', endTime: '5:49'}
+    // ]],
     [ 'Hippopotamus' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '5:49', endTime: '6:09'}
     ]],
@@ -118,66 +118,66 @@ export const animals = normalizeData(new Map<string, Array<VideoDetailsStr>>([
     [ 'Zebra' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '7:49', endTime: '8:09'}
     ]],
-    [ 'Chimpanzee' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '8:09', endTime: '8:29'}
-    ]],
-    [ 'Muskox' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '8:29', endTime: '8:49'}
-    ]],
+    // [ 'Chimpanzee' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '8:09', endTime: '8:29'}
+    // ]],
+    // [ 'Muskox' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '8:29', endTime: '8:49'}
+    // ]],
     [ 'Crocodile' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '8:49', endTime: '9:09'}
     ]],
     [ 'Sloth' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '9:09', endTime: '9:29'}
     ]],
-    [ 'Otter' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '9:29', endTime: '9:49'}
-    ]],
-    [ 'Moose' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '9:49', endTime: '10:09'}
-    ]],
+    // [ 'Otter' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '9:29', endTime: '9:49'}
+    // ]],
+    // [ 'Moose' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '9:49', endTime: '10:09'}
+    // ]],
     [ 'Hyena' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '10:09', endTime: '10:29'}
     ]],
-    [ 'Lynx' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '10:29', endTime: '10:49'}
-    ]],
+    // [ 'Lynx' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '10:29', endTime: '10:49'}
+    // ]],
     [ 'Lemur' , [
         {videoId: 'GIAjzCH3X8Q', startTime: '10:49', endTime: '11:09'}
     ]],
-    [ 'Anteater' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '11:09', endTime: '11:29'}
-    ]],
-    [ 'Capybara' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '11:29', endTime: '11:49'}
-    ]],
-    [ 'Bearcat' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '11:49', endTime: '12:09'}
-    ]],
-    [ 'Gazelle' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '12:09', endTime: '12:29'}
-    ]],
-    [ 'Cougar' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '12:29', endTime: '12:49'}
-    ]],
-    [ 'Baboon' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '12:49', endTime: '13:09'}
-    ]],
-    [ 'African Buffalo' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '13:09', endTime: '13:29'}
-    ]],
-    [ 'Bonobo' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '13:29', endTime: '13:49'}
-    ]],
-    [ 'Seal' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '13:49', endTime: '14:09'}
-    ]],
-    [ 'Chameleon' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '14:09', endTime: '14:29'}
-    ]],
-    [ 'Snow Leopard' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '14:29', endTime: '15:00'}
-    ]],
+    // [ 'Anteater' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:09', endTime: '11:29'}
+    // ]],
+    // [ 'Capybara' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:29', endTime: '11:49'}
+    // ]],
+    // [ 'Bearcat' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:49', endTime: '12:09'}
+    // ]],
+    // [ 'Gazelle' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:09', endTime: '12:29'}
+    // ]],
+    // [ 'Cougar' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:29', endTime: '12:49'}
+    // ]],
+    // [ 'Baboon' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:49', endTime: '13:09'}
+    // ]],
+    // [ 'African Buffalo' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:09', endTime: '13:29'}
+    // ]],
+    // [ 'Bonobo' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:29', endTime: '13:49'}
+    // ]],
+    // [ 'Seal' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:49', endTime: '14:09'}
+    // ]],
+    // [ 'Chameleon' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '14:09', endTime: '14:29'}
+    // ]],
+    // [ 'Snow Leopard' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '14:29', endTime: '15:00'}
+    // ]],
 ]));
 
 // 0:09 Cheetah
