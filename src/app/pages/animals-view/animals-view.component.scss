@@ -4,17 +4,18 @@
     display: grid;
     width: fit-content;
     margin: auto;
-    grid-template-columns: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 30vw);
     row-gap: 5vmin;
     padding: 5vmin;
-
-    @media (orientation:landscape) { 
-        grid-template-columns: repeat(4, 15vw);
-    }
 
     @include respond(tab-port) {
         row-gap: 2vmin;
         padding: 2vmin;
+    }
+    
+    @media (orientation:landscape) { 
+        grid-template-columns: repeat(10, 9.5vw);
+        grid-template-rows: repeat(5, 14vh);
     }
 }
 
@@ -33,13 +34,19 @@
         padding: 2vmin;
     }
 
+    @media (orientation:landscape) { 
+        height: 100%;
+        padding: 0;
+    }
+    
     &:hover {
         transition: transform 0.4s;
         transform: scale(1.1);
     }
 
     &__img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 

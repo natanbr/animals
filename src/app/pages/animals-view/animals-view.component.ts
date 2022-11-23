@@ -34,7 +34,7 @@ export class AnimalsViewComponent implements OnInit {
   }
 
   imageUrl(id: string): string {
-    return `${id}.png` || '';
+    return `${id.toLowerCase()}.png` || '';
   }
 }
 
