@@ -21,8 +21,8 @@ export class YoutubePlayerComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     this.playerVars = {
       autoplay: 1,
-      start: this.videoDetails.startTime,
-      end: this.videoDetails.endTime,
+      start: this.videoDetails.startTime as number,
+      end: this.videoDetails.endTime as number,
     };
 
     // This code loads the IFrame Player API code asynchronously, according to the instructions at

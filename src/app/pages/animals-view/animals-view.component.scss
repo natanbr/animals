@@ -2,14 +2,14 @@
 
 .button-container {
     display: grid;
-    max-width: 1000px;
+    width: fit-content;
     margin: auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 10vw);
     row-gap: 5vmin;
     padding: 5vmin;
 
     @media (orientation:landscape) { 
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 15vw);
     }
 
     @include respond(tab-port) {
@@ -24,6 +24,7 @@
     height: fit-content;
     padding: 2vmin;
     justify-self: center;
+    align-self: end;
     background-color: transparent;
     border: none;
 
@@ -35,6 +36,10 @@
     &:hover {
         transition: transform 0.4s;
         transform: scale(1.1);
+    }
+
+    &__img {
+        width: 100%;
     }
 }
 
