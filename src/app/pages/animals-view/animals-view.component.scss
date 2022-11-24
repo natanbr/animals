@@ -1,21 +1,47 @@
-@import '../../../scss/abstracts/_mixins.scss';
+// @import '../../../scss/abstracts/_mixins.scss';
+.animals-view {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.controls {
+    display: flex;
+    padding: 2vh 0;
+    width: 84vw;
+    margin: auto;
+    justify-content: space-between;
+
+    &__button {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100%;
+        border: grey 2px solid;
+        color: grey;
+        font-size: 3rem;
+
+        &:disabled {
+            border: rgb(212, 212, 212) 2px solid;
+            color: rgb(212, 212, 212);
+        }
+    }
+
+}
 
 .button-container {
     display: grid;
     width: fit-content;
     margin: auto;
-    grid-template-columns: repeat(3, 30vw);
-    grid-template-rows: repeat(8, 20vh);
+    grid-template-columns: repeat(3, 24vw);
+    grid-template-rows: repeat(4, 20vh);
     row-gap: 2vmin;
     column-gap: 1vmin;
     padding: 5vmin;
 
     @media (orientation:landscape) { 
-        // full grid 
-        // grid-template-columns: repeat(10, 9.5vw);
-        // grid-template-rows: repeat(5, 14vh);
-        grid-template-columns: repeat(7, 12vw);
-        grid-template-rows: repeat(4, 19vh);
+        grid-template-columns: repeat(4, 21vw);
+        grid-template-rows: repeat(3, 22vh);
         row-gap: 4vmin;
         column-gap: 1vmin;
     }
@@ -32,11 +58,6 @@
     border: none;
     height: 100%;
 
-    @include respond(tab-port) {
-        row-gap: 2vmin;
-        padding: 2vmin;
-    }
-
     @media (orientation:landscape) { 
         padding: 0;
     }
@@ -49,6 +70,12 @@
     &__img {
         max-width: 100%;
         max-height: 100%;
+        width: 100%;
+
+        @media (orientation:landscape) { 
+            height: 100%;
+        }
+        
     }
 }
 

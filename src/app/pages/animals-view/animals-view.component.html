@@ -1,21 +1,23 @@
-<!-- <div class="decoration">
-    <img class="top-right" src="assets/images/image-4.png"/>
-    <img class="bottom-left" src="assets/images/image-4.png"/>
-    <img class="bottom-right" src="assets/images/image-4.png"/>
-    <img class="top-left" src="assets/images/image-4.png"/>
-</div> -->
+<div class="animals-view">
+    <div class="button-container">
+        <button *ngFor="let animalId of (displayList$ | async)"
+            class="animal-button"
+            (click)="startVideo(animalId)">
+            <img class="animal-button__img"
+                src="assets/animals/{{imageUrl(animalId)}}" >
+        </button>
+    </div>
 
-<div class="button-container">
-    <button *ngFor="let animalId of animalIds"
-        class="animal-button"
-        (click)="startVideo(animalId)">
-        <img class="animal-button__img" src="assets/animals/{{imageUrl(animalId)}}" >
-    </button>
-
-    <button
-        class="animal-button"
-        (click)="test()">   
-    </button>
-   
+    <div class="controls">
+        <button class="controls__button prev"
+            (click)="prevPage()"
+            [disabled]="page <= 0">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="controls__button next"
+            (click)="nextPage()"
+            [disabled]="page >= totalPages - 1">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
 </div>
-

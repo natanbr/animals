@@ -47,180 +47,135 @@ const inSec = (min = 0, seconds = 0) => {
 // ]);
 export const animals = normalizeData(new Map<string, Array<VideoDetailsStr>>([
     [ 'Cheetah' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '0:09', endTime: '0:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '0:09', endTime: '0:27'}
     ]],
     [ 'Fox' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '0:29', endTime: '0:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '0:29', endTime: '0:47'}
     ]],
     [ 'Tiger' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '0:49', endTime: '1:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '0:49', endTime: '1:07'}
     ]],
     [ 'Wolf' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '1:09', endTime: '1:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '1:09', endTime: '1:27'}
     ]],
     [ 'Giraffe' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '1:29', endTime: '1:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '1:29', endTime: '1:47'}
     ]],
     [ 'Panda' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '1:49', endTime: '2:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '1:49', endTime: '2:07'}
     ]],
     [ 'Orangutan' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '2:09', endTime: '2:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '2:09', endTime: '2:27'}
     ]],
     [ 'Kangaroo' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '2:29', endTime: '2:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '2:29', endTime: '2:47'}
     ]],
     [ 'Grizzly-Bear' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '2:49', endTime: '3:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '2:49', endTime: '3:07'}
     ]],
     [ 'Rhinoceros' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '3:09', endTime: '3:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '3:09', endTime: '3:27'}
     ]],
     [ 'Koala' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '3:29', endTime: '3:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '3:29', endTime: '3:47'}
     ]],
     // [ 'Sealion' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '3:49', endTime: '4:09'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '3:49', endTime: '4:07'}
     // ]],
     // [ 'Meerkat' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '4:09', endTime: '4:29'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '4:09', endTime: '4:27'}
     // ]],
     [ 'Lion' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '4:29', endTime: '4:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '4:29', endTime: '4:47'}
     ]],
     [ 'Penguin' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '4:49', endTime: '5:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '4:49', endTime: '5:07'}
     ]],
     [ 'Leopard' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '5:09', endTime: '5:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '5:09', endTime: '5:27'}
     ]],
     // [ 'Polar Bear' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '5:29', endTime: '5:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '5:29', endTime: '5:47'}
     // ]],
     [ 'Hippopotamus' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '5:49', endTime: '6:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '5:49', endTime: '6:07'}
     ]],
     [ 'Owl' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '6:09', endTime: '6:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '6:09', endTime: '6:27'}
     ]],
     [ 'Elephant' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '6:29', endTime: '6:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '6:29', endTime: '6:47'}
     ]],
     [ 'Gorilla' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '6:49', endTime: '7:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '6:49', endTime: '7:07'}
     ]],
     [ 'Ostrich' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '7:09', endTime: '7:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '7:09', endTime: '7:27'}
     ]],
     [ 'Boa Constrictor' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '7:29', endTime: '7:49'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '7:29', endTime: '7:47'}
     ]],
     [ 'Zebra' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '7:49', endTime: '8:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '7:49', endTime: '8:07'}
     ]],
     // [ 'Chimpanzee' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '8:09', endTime: '8:29'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '8:09', endTime: '8:27'}
     // ]],
     // [ 'Muskox' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '8:29', endTime: '8:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '8:29', endTime: '8:47'}
     // ]],
     [ 'Crocodile' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '8:49', endTime: '9:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '8:49', endTime: '9:07'}
     ]],
     [ 'Sloth' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '9:09', endTime: '9:29'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '9:09', endTime: '9:27'}
     ]],
     // [ 'Otter' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '9:29', endTime: '9:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '9:29', endTime: '9:47'}
     // ]],
     // [ 'Moose' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '9:49', endTime: '10:09'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '9:49', endTime: '10:07'}
     // ]],
-    [ 'Hyena' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '10:09', endTime: '10:29'}
-    ]],
+    // [ 'Hyena' , [
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '10:09', endTime: '10:27'}
+    // ]],
     // [ 'Lynx' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '10:29', endTime: '10:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '10:29', endTime: '10:47'}
     // ]],
     [ 'Lemur' , [
-        {videoId: 'GIAjzCH3X8Q', startTime: '10:49', endTime: '11:09'}
+        {videoId: 'GIAjzCH3X8Q', startTime: '10:49', endTime: '11:07'}
     ]],
     // [ 'Anteater' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:09', endTime: '11:29'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:09', endTime: '11:27'}
     // ]],
     // [ 'Capybara' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:29', endTime: '11:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:29', endTime: '11:47'}
     // ]],
     // [ 'Bearcat' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:49', endTime: '12:09'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '11:49', endTime: '12:07'}
     // ]],
     // [ 'Gazelle' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:09', endTime: '12:29'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:09', endTime: '12:27'}
     // ]],
     // [ 'Cougar' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:29', endTime: '12:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:29', endTime: '12:47'}
     // ]],
     // [ 'Baboon' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:49', endTime: '13:09'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '12:49', endTime: '13:07'}
     // ]],
     // [ 'African Buffalo' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:09', endTime: '13:29'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:09', endTime: '13:27'}
     // ]],
     // [ 'Bonobo' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:29', endTime: '13:49'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:29', endTime: '13:47'}
     // ]],
     // [ 'Seal' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:49', endTime: '14:09'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '13:49', endTime: '14:07'}
     // ]],
     // [ 'Chameleon' , [
-    //     {videoId: 'GIAjzCH3X8Q', startTime: '14:09', endTime: '14:29'}
+    //     {videoId: 'GIAjzCH3X8Q', startTime: '14:09', endTime: '14:27'}
     // ]],
     // [ 'Snow Leopard' , [
     //     {videoId: 'GIAjzCH3X8Q', startTime: '14:29', endTime: '15:00'}
     // ]],
 ]));
-
-// 0:09 Cheetah
-// 0:29 Fox
-// 0:49 Tiger
-// 1:09 Wolf
-// 1:29 Giraffe
-// 1:49 Panda
-// 2:09 Orangutan
-// 2:29 Kangaroo
-// 2:49 Grizzly Bear
-// 3:09 Rhinoceros
-// 3:29 Koala
-// 3:49 Sealion
-// 4:09 Meerkat
-// 4:29 Lion
-// 4:49 Penguin
-// 5:09 Leopard
-// 5:29 Polar Bear
-// 5:49 Hippopotamus
-// 6:09 Owl
-// 6:29 Elephant
-// 6:49 Gorilla
-// 7:09 Ostrich
-// 7:29 Boa Constrictor
-// 7:49 Zebra
-// 8:09 Chimpanzee
-// 8:29 Muskox
-// 8:49 Crocodile
-// 9:09 Sloth
-// 9:29 Otter
-// 9:49 Moose
-// 10:09 Hyena
-// 10:29 Lynx
-// 10:49 Lemur
-// 11:09 Anteater
-// 11:29 Capybara
-// 11:49 Bearcat
-// 12:09 Gazelle
-// 12:29 Cougar
-// 12:49 Baboon
-// 13:09 African Buffalo
-// 13:29 Bonobo
-// 13:49 Seal
-// 14:09 Chameleon
-// 14:29 Snow Leopard
