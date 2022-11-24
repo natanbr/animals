@@ -35,14 +35,14 @@
     display: grid;
     width: fit-content;
     margin: auto;
-    grid-template-columns: repeat(3, 24vw);
+    grid-template-columns: repeat(3, 30vw);
     grid-template-rows: repeat(4, 20vh);
     row-gap: 2vmin;
     column-gap: 1vmin;
-    padding: 5vmin;
+    padding: 4vmin;
 
     @media (orientation:landscape) { 
-        grid-template-columns: repeat(4, 21vw);
+        grid-template-columns: repeat(4, 18vw);
         grid-template-rows: repeat(3, 22vh);
         row-gap: 4vmin;
         column-gap: 1vmin;
