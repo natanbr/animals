@@ -9,9 +9,9 @@
 .controls {
     display: flex;
     padding: 2vh 0;
-    width: 84vw;
     margin: auto;
     justify-content: space-between;
+    gap: 3vw;
 
     &__button {
         width: 5vw;
@@ -20,6 +20,8 @@
         border: grey 2px solid;
         color: grey;
         font-size: 3rem;
+        min-width: 6rem;
+        min-height: 6rem;
 
         &:disabled {
             border: rgb(212, 212, 212) 2px solid;
